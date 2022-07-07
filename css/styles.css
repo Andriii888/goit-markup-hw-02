@@ -21,7 +21,8 @@ font-family: 'Roboto',
 button {
     cursor:pointer;
 }
-.header{
+.header-navigation,
+.header-contacts{
     background: var(--color-white,white);
     color: var(--primary-text-colorry,black);
     font-style: normal;
@@ -30,13 +31,9 @@ button {
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
-.header a:hover,
-.header a:focus{
+.navigation-links a:hover,
+.navigation-links a:focus{
     color:var(--accent-text-color,blue);
-}
-.header a:active,
-.header a:visited{
-    color: red;
 }
 .navigation-links a{
     color:var(--primary-text-colorry,black) ;
@@ -49,6 +46,10 @@ button {
         letter-spacing: 0.02em;
     
         color:var(--text-color,silver);
+}
+.header-contacts a:hover,
+.header-contacts a:focus{
+    color:var(--accent-text-color,blue) ;
 }
 .logo{
     font-family: 'Raleway';
@@ -146,49 +147,38 @@ button {
             color:var(--text-color,silver);
     }
     /* footer */
-.footer{
+.links-address a{
     font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
-        background-color:var(--bgcolor-black,black) ;
-    }
-        .links-address a{
-            font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 1.7;
-                letter-spacing: 0.03em;
-                color:var(--adress-color,white);
-            }
+                color: var(--adress-color, white);
+             }
+             footer{
+        background-color: var(--bgcolor-black, black);
+             }
 .links-address a:hover,
 .links-address a:focus {
 color: var(--color-white,white);
-            }
-.links-address a:visited,
-.links-address a:active{
- color:red;
- }
-    
+            }  
+            /* PORTFOLIO */
 /* buttons-portfolio */
-.buttons-portfolio{
+.buttons-portfolio button{
+    font-family: 'Roboto',
+            sans-serif;
     font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
-        letter-spacing: 0.03em;
-    
+        letter-spacing: 0.03em;    
         color:var(--primary-text-colorry,black);
 }
 button:hover,
 button:focus{
 background-color:var(--accent-text-color,blue);
 }
-button:active,
-button:visited{
-    background-color: red;
-}
+
 /* galery */
 .galery-portfolio h2{
     font-style: normal;
