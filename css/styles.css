@@ -12,6 +12,28 @@
 --font-family-primary: 'Roboto',sans-serif;
 }
 
+h1,h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,ol{
+    padding-left: 0;
+        margin-top: 0;
+            margin-bottom: 0;
+}
+img{
+    display: block;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-header-container{
+    display: flex;
+}
 body{
 font-family: 'Roboto',
         sans-serif;
@@ -29,6 +51,27 @@ a {
 button {
     cursor:pointer;
     font-family:var(--font-family-primary) ;
+}
+.header-navigation{
+    display: flex;
+}
+.header-navigation:first-child {
+    margin-left: 215px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header-navigation:last-child {
+    margin-left: 93px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.navigation-links{
+    display: flex;
+}
+.header-contacts{
+    display: flex;
+    fu
 }
 .header-navigation,
 .header-contacts{
@@ -91,8 +134,12 @@ button {
                 }
 /* герой */
 .hero{
-
-    background: var(--bgcolor-black,black);
+        background: var(--bgcolor-black,black);
+}
+.hero-img-button{
+    display: flex;
+    flex-direction:column ;
+    flex-basis: 600px;
 }
 .hero-title{
     font-family: 'Roboto';
@@ -116,8 +163,20 @@ button {
         letter-spacing: 0.06em;    
         color:var(--color-white,white);
         background: var(--accent-text-color,blue);
+        padding-top: 10px;
+        padding-bottom:10px;
+        padding-left: 32px;
+        padding-right: 32px;
 }
+/* .button-center{
+    display: flex;
+    justify-content: center;
+} */
 /* переваги */
+.our-advantage{
+    display: flex;
+flex-wrap: wrap;
+align-items: center;}
     .advantage h3{
         font-style: normal;
             font-weight: 700;
@@ -136,6 +195,12 @@ button {
             color:var(--text-color,#757575);
     }
     /* робота */
+    .our-work{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: space-between;
+    }
     .work-title{
         font-style: normal;
             font-weight: 700;
@@ -181,6 +246,12 @@ button {
             letter-spacing: 0.03em;
         
             color:var(--text-color,silver);
+    }
+    .our-team{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
     }
     /* footer */
 .links-address a{
